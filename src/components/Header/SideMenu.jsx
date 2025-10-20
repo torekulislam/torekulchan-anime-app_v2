@@ -63,25 +63,10 @@ function SideMenu({ setShoManu, shoManu }) {
 
               <div className="">
                 {navItem.map((item, index) => (
-                  // <Link key={index} to={item.slug}>
-                  //   <NavLink
-                  //     to={item.slug}
-                  //     className={({ isActive }) =>
-                  //       ` ${
-                  //         isActive
-                  //           ? "bg-stone-300 text-[#12CBC4]"
-                  //           : "text-gray-600"
-                  //       }`
-                  //     }
-                  //   ></NavLink>
-                  //   <div className="px-3 py-4 border-b border-gray-700 hover:text-cyan-500 transition">
-                  //     {item.name}
-                  //   </div>
-                  // </Link>
                   <NavLink
                     key={index}
-                    to={item.slug}
-                    end={item.slug === "/home"} // 👈 only match exactly for home
+                    to={item?.slug}
+                    end={item?.slug === "/home"} // 👈 only match exactly for home
                     className={({ isActive }) =>
                       `${
                         isActive
@@ -89,12 +74,13 @@ function SideMenu({ setShoManu, shoManu }) {
                           : "text-gray-200"
                       }`
                     }
+                    aria-label={item?.name}
                   >
                     <div
-                      title={item.name}
+                      title={item?.name}
                       className="px-3 py-4 block w-full text-left border-b border-gray-700 hover:text-cyan-500 transition"
                     >
-                      {item.name}
+                      {item?.name}
                     </div>
                   </NavLink>
                 ))}

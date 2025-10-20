@@ -14,6 +14,7 @@ function CharactersContaner({ characters }) {
             <button
               className=" hover:text-cyan-500 duration-300 transition text-[12px] sm:text-[16px]"
               onClick={() => setShowMore(!showMore)}
+              aria-label="View More - View Less button"
             >
               {showMore ? (
                 <span>

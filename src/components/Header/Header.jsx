@@ -26,6 +26,7 @@ function Header() {
             onClick={() => setShoManu(!shoManu)}
             className="text-2xl sm:text-3xl cursor-pointer sm:mr-3"
           >
+            {""}
             <i className="fa-solid fa-bars"></i>
           </button>
           <Link to="/">
@@ -35,13 +36,6 @@ function Header() {
           </Link>
         </div>
         <div className="flex items-center w-3/12 max-w-[275px] gap-3">
-          {/* <ul className='flex items-center gap-5 text-[#161b33]'>
-            <li className='text-lg font-[Poetsen_One] hover:text-cyan-500 cursor-pointer'>Home</li>
-            <li className='text-lg font-[Poetsen_One] hover:text-cyan-500 cursor-pointer'>About</li>
-            <li className='text-lg font-[Poetsen_One] hover:text-cyan-500 cursor-pointer'>Contact</li>
-            <li className='text-lg font-[Poetsen_One] hover:text-cyan-500 cursor-pointer'>Login</li>
-          </ul> */}
-
           <div className=" hidden mr-4 sm:flex bg-cyan-50 text-[#161b33] px-3 w-full  items-center justify-between">
             <form
               onSubmit={handleSubmit}
@@ -58,7 +52,9 @@ function Header() {
               <button
                 type="submit"
                 className="text-[#161b33] cursor-pointer hover:text-cyan-500 transition-all duration-300"
+                aria-label="submit button"
               >
+                {""}
                 <i className="fa-solid fa-magnifying-glass"></i>
               </button>
             </form>
@@ -98,7 +94,9 @@ function Header() {
             <button
               type="submit"
               className="text-[#161b33] cursor-pointer hover:text-cyan-500 transition-all duration-300"
+              aria-label="submit button"
             >
+              {""}
               <i className="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>

@@ -11,7 +11,6 @@ function NumBtn({ isCrrount, num, onPageChange, basePath = "" }) {
             ? "bg-cyan-400 text-black font-bold"
             : "bg-[#1f1f2f] text-gray-400 hover:text-white"
         }`}
-        // onClick={() => onPageChange(num)}
       >
         {num}
       </button>

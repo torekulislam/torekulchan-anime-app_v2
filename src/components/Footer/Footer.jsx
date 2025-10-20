@@ -16,28 +16,36 @@ function Footer() {
               href="https://github.com/torekuislam"
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="my github acount"
             >
+              {""}
               <i className="fa-brands fa-github mr-4 hover:text-cyan-500 cursor-pointer"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/torekul-islam-72748b335/"
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="my linkdin acount"
             >
+              {""}
               <i className="fa-brands fa-linkedin mr-4 hover:text-cyan-500 cursor-pointer"></i>
             </a>
             <a
               href="https://www.facebook.com/torekul.islam.9469545"
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="my facebook acount"
             >
+              {""}
               <i className="fa-brands fa-facebook mr-4 hover:text-cyan-500 cursor-pointer"></i>
             </a>
             <a
               href="https://x.com/torekul__islam"
+              aria-label="my twetar/x acount"
               target="_blank"
               rel="noopener noreferrer"
             >
+              {""}
               <i className="fa-brands fa-twitter hover:text-cyan-500 cursor-pointer"></i>
             </a>
           </div>
