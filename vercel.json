@@ -1,6 +1,7 @@
 {
-  "analytics": false,
   "version": 2,
+  "analytics": false,
+  "builds": [{ "src": "vite.config.*", "use": "@vercel/static-build" }],
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }

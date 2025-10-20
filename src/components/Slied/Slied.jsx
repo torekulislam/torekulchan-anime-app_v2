@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { fetchAnimeList } from "../../api/fetchAnimeList";
 import SliedCard from "./SliedCard";
 function Slied({ data }) {
   const [animeLists, setAnimeLists] = useState([]);
